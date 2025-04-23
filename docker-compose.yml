@@ -1,0 +1,13 @@
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe
+    container_name: oracle-xe
+    ports:
+      - "1521:1521"
+      - "8080:8080"
+    environment:
+      ORACLE_PASSWORD: oracle
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+volumes:
+  oracle_data:
