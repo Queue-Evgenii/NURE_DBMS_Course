@@ -1,0 +1,1 @@
+SELECT * FROM grants_log;
