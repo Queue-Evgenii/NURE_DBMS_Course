@@ -24,9 +24,9 @@ BEGIN
 END;
 
 -- Trigger handles the following events:
--- 1. Insert: Before a new grant is added.
--- 2. Update: Before an existing grant is updated.
--- 3. Delete: Before a grant is deleted.
+-- 1. Insert: After a new grant is added.
+-- 2. Update: After an existing grant is updated.
+-- 3. Delete: After a grant is deleted.
 -- The trigger adds logs into grants_log.
 CREATE OR REPLACE TRIGGER grants_trigger_after
 AFTER INSERT OR UPDATE OR DELETE ON Grants
